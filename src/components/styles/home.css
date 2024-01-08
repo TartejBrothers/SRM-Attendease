@@ -3,6 +3,14 @@
   font-family: "Poppins", sans-serif;
 }
 html {
+  overflow-x: hidden;
+}
+.homecontent {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .homebody {
   background-color: #222831;
@@ -127,7 +135,7 @@ form input::placeholder {
 }
 .imgright {
   right: 50px;
-  bottom: 0px;
+  bottom: 50px;
 }
 .imgleft {
   left: 50px;
@@ -136,6 +144,17 @@ form input::placeholder {
 .imgright img,
 .imgleft img {
   max-height: 25vw;
+}
+.vector1 {
+  left: 5vw;
+  top: 10vh;
+}
+.vector2 {
+  left: 17vw;
+}
+.vector3 {
+  right: 8vw;
+  top: 15vh;
 }
 @media screen and (max-width: 1000px) {
   .homeheader h1 {
@@ -161,7 +180,10 @@ form input::placeholder {
   .bottomtext {
     font-size: 20px;
   }
-  .imgright {
+  .imgright,
+  .vector1,
+  .vector2,
+  .vector3 {
     display: none;
   }
   #vectorimg {

@@ -17,50 +17,54 @@ export default function homepage() {
   };
   return (
     <div className="homebody">
-      <div className="homeheader">
-        <h1>
-          SRM ATTEND<font color="#00ADB5">EASE</font>
-        </h1>
-        <p>A Portal To Assist You In Your Attendance Calculations</p>
-      </div>
-      <div className="homeform">
-        <form>
-          <h4>Login with your Academia Details</h4>
-          <div className="forminner">
-            <p>Glad you’re back.!</p>
-            <input
-              type="text"
-              name="ID"
-              placeholder="User ID"
-              style={{ marginBottom: "20px" }}
-              required
-            />
-            <div className="inputfield">
-              <img
-                src={eye}
-                alt="password"
-                className="passwordicon"
-                onClick={changeType}
-              />
+      <div className="homecontent">
+        <div className="homeheader">
+          <h1>
+            SRM ATTEND<font color="#00ADB5">EASE</font>
+          </h1>
+          <p>A Portal To Assist You In Your Attendance Calculations</p>
+        </div>
+        <div className="homeform">
+          <form>
+            <h4>Login with your Academia Details</h4>
+            <div className="forminner">
+              <p>Glad you’re back.!</p>
               <input
-                type="password"
-                name="password"
-                placeholder="Password"
+                type="text"
+                name="ID"
+                placeholder="User ID"
+                style={{ marginBottom: "20px" }}
                 required
-                id="password"
               />
+              <div className="inputfield">
+                <img
+                  src={eye}
+                  alt="password"
+                  className="passwordicon"
+                  onClick={changeType}
+                />
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                  id="password"
+                />
+              </div>
+              <div className="rememberbox">
+                <input type="checkbox" name="remember" />
+                <p>Remember Me</p>
+              </div>
+              <button type="submit" className="loginbutton">
+                Login
+              </button>
             </div>
-            <div className="rememberbox">
-              <input type="checkbox" name="remember" />
-              <p>Remember Me</p>
-            </div>
-            <button type="submit" className="loginbutton">
-              Login
-            </button>
-          </div>
-        </form>
+          </form>
+        </div>
+        <h2 className="bottomtext">
+          Sit back and let us do all the heavy work
+        </h2>
       </div>
-      <h2 className="bottomtext">Sit back and let us do all the heavy work</h2>
       <div className="imgleft" id="vectorimg">
         <img src={homeleft} alt="home" />
       </div>
