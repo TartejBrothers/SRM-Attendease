@@ -63,6 +63,7 @@ form input {
   background: none;
   border-radius: 12px;
   border: 1px solid #fff;
+  width: calc(100% - 40px);
 }
 form input::placeholder {
   color: #ffffff;
