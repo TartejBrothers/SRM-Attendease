@@ -1,13 +1,15 @@
 import React from "react";
 import "./styles/home.css";
 import eye from "./images/eye.png";
+import homeleft from "./images/homeleft.png";
+import homeright from "./images/homeright.png";
 export default function homepage() {
   const changeType = () => {
-    var x = document.getElementById("password");
-    if (x.type === "password") {
-      x.type = "text";
+    var passwordfield = document.getElementById("password");
+    if (passwordfield.type === "password") {
+      passwordfield.type = "text";
     } else {
-      x.type = "password";
+      passwordfield.type = "password";
     }
   };
   return (
@@ -21,39 +23,47 @@ export default function homepage() {
       <div className="homeform">
         <form>
           <h4>Login with your Academia Details</h4>
-          <p>Glad you’re back.!</p>
-          <input
-            type="text"
-            name="ID"
-            placeholder="User ID"
-            style={{ marginBottom: "20px" }}
-            required
-          />
-          <div className="inputfield">
-            <img
-              src={eye}
-              alt="password"
-              className="passwordicon"
-              onClick={changeType}
-            />
+          <div className="forminner">
+            <p>Glad you’re back.!</p>
             <input
-              type="password"
-              name="password"
-              placeholder="Password"
+              type="text"
+              name="ID"
+              placeholder="User ID"
+              style={{ marginBottom: "20px" }}
               required
-              id="password"
             />
+            <div className="inputfield">
+              <img
+                src={eye}
+                alt="password"
+                className="passwordicon"
+                onClick={changeType}
+              />
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+                id="password"
+              />
+            </div>
+            <div className="rememberbox">
+              <input type="checkbox" name="remember" />
+              <p>Remember Me</p>
+            </div>
+            <button type="submit" className="loginbutton">
+              Login
+            </button>
           </div>
-          <div className="rememberbox">
-            <input type="checkbox" name="remember" />
-            <p>Remember Me</p>
-          </div>
-          <button type="submit" className="loginbutton">
-            Login
-          </button>
         </form>
       </div>
       <h2>Sit back and let us do all the heavy work</h2>
+      <div className="imgleft">
+        <img src={homeleft} alt="home" />
+      </div>
+      <div className="imgright">
+        <img src={homeright} alt="home" />
+      </div>
     </div>
   );
 }

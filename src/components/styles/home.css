@@ -30,6 +30,8 @@
 .homeform form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 20px;
   border: 1px solid var(--Glass1-Stroke-Carey, #afafaf);
   background: var(
@@ -52,10 +54,11 @@ form h4 {
   text-align: center;
   margin-block-start: 0;
   margin-block-end: 0;
-  font-size: 30px;
+  font-size: 26px;
 }
 
-form input {
+form input[type="text"],
+[type="password"] {
   display: flex;
   color: #ffffff;
   padding: 14px 16px;
@@ -65,19 +68,25 @@ form input {
   border: 1px solid #fff;
   width: calc(100% - 40px);
 }
+
 form input::placeholder {
   color: #ffffff;
 }
+
 .rememberbox {
   display: flex;
-  align-items: center;
+  justify-content: left;
+  gap: 5px;
   margin: 0px 0px 20px;
+}
+.forminner {
+  width: 80%;
 }
 .inputfield {
   position: relative;
 }
 .passwordicon {
-  height: 15px;
+  height: 18px;
   right: 20px;
   position: absolute;
   top: 0;
@@ -91,6 +100,7 @@ form input::placeholder {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  width: 100%;
   border-radius: 12px;
   background: radial-gradient(
     100% 100% at 100% 100%,
@@ -100,4 +110,27 @@ form input::placeholder {
   border: none;
   color: #ffffff;
   font-size: 20px;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 1000px) {
+  .homeheader h1 {
+    font-size: 30px;
+  }
+  .homeheader p {
+    font-size: 20px;
+  }
+  .homeform form {
+    padding: 20px;
+    margin: 10px;
+  }
+  form h4 {
+    font-size: 25px;
+  }
+  form input[type="text"],
+  [type="password"] {
+    padding: 12px 14px;
+  }
+  .loginbutton {
+    font-size: 18px;
+  }
 }
