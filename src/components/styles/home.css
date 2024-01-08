@@ -11,6 +11,7 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 10;
 }
 .homebody {
   background-color: #222831;
@@ -131,7 +132,7 @@ form input::placeholder {
 }
 #vectorimg {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
 }
 .imgright {
   right: 50px;
