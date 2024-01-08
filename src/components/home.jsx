@@ -3,6 +3,9 @@ import "./styles/home.css";
 import eye from "./images/eye.png";
 import homeleft from "./images/homeleft.png";
 import homeright from "./images/homeright.png";
+import vector1 from "./images/vectors/vector1.png";
+import vector2 from "./images/vectors/vector2.png";
+import vector3 from "./images/vectors/vector3.png";
 export default function homepage() {
   const changeType = () => {
     var passwordfield = document.getElementById("password");
@@ -57,12 +60,21 @@ export default function homepage() {
           </div>
         </form>
       </div>
-      <h2>Sit back and let us do all the heavy work</h2>
-      <div className="imgleft">
+      <h2 className="bottomtext">Sit back and let us do all the heavy work</h2>
+      <div className="imgleft" id="vectorimg">
         <img src={homeleft} alt="home" />
       </div>
-      <div className="imgright">
+      <div className="imgright" id="vectorimg">
         <img src={homeright} alt="home" />
+      </div>
+      <div className="vector1" id="vectorimg">
+        <img src={vector1} alt="vector" />
+      </div>
+      <div className="vector2" id="vectorimg">
+        <img src={vector2} alt="vector" />
+      </div>
+      <div className="vector3" id="vectorimg">
+        <img src={vector3} alt="vector" />
       </div>
     </div>
   );
