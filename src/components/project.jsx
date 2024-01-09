@@ -1,31 +1,31 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
-import "./styles/project.css";
 import "react-datepicker/dist/react-datepicker.css";
+import "./styles/project.css";
 import "./styles/global.css";
 export default function ProjectPage() {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(null);
 
   return (
-    <div className="projectbody">
+    <div className="projectcontent">
       <h1>
         SRM ATTEND<font color="#00ADB5">EASE</font>
       </h1>
-      <h5>Pick a single date or add a range</h5>
-      <div>
+      <div className="projectbody">
+        <h5>Pick a single date or add a range</h5>
         <div className="dateform">
           <DatePicker
-            wrapperClassName="date"
+            wrapperClassName="datePicker"
+            placeholderText="Select Start Date"
             selected={startDate}
             selectsStart
             startDate={startDate}
-            placeholderText="Select Start Date"
             endDate={endDate}
             onChange={(date) => setStartDate(date)}
           />
           <DatePicker
-            wrapperClassName="date"
+            wrapperClassName="datePicker"
             selected={endDate}
             selectsEnd
             startDate={startDate}
