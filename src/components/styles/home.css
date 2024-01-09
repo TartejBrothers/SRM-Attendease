@@ -1,4 +1,3 @@
-
 .homecontent {
   display: flex;
   height: 100vh;
@@ -33,7 +32,7 @@
 .homeheader p {
   font-size: 24px;
 }
-.homeform form {
+.loginform {
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -57,14 +56,14 @@
   background-image: url("../images/formbg.png");
   padding-inline: 20px;
 }
-form h4 {
+.loginform h4 {
   text-align: center;
   margin-block-start: 0;
   margin-block-end: 0;
   font-size: 26px;
 }
 
-form input[type="text"],
+.loginform input[type="text"],
 [type="password"] {
   display: flex;
   color: #ffffff;
@@ -76,7 +75,7 @@ form input[type="text"],
   width: calc(100% - 40px);
 }
 
-form input::placeholder {
+.loginform input::placeholder {
   color: #ffffff;
 }
 
