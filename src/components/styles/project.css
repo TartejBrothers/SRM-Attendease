@@ -28,6 +28,7 @@ html {
 .react-datepicker {
   border-radius: 20px;
 }
+
 .react-datepicker__input-container input {
   width: 50vw;
   background: none;
@@ -41,7 +42,7 @@ html {
 }
 .react-datepicker__month-container {
   padding: 40px;
-  width: calc(50vw - 80px);
+  width: calc(50vw - 40px);
 }
 .react-datepicker__day-names {
   background-color: #ffffff;
@@ -56,9 +57,60 @@ html {
 }
 
 .react-datepicker__day--selected {
-  background: rgba(0, 173, 181, 0.73);
+  background: #b9e0e1;
 }
 .react-datepicker__day--in-selecting-range,
 .react-datepicker__day--in-range {
-  background-color: rgba(0, 173, 181, 0.22);
+  background-color: #b9e0e1;
+}
+.react-datepicker__navigation {
+  margin-top: 8px;
+}
+.submitbutton {
+  display: flex;
+  padding: 14px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: calc(50vw + 40px);
+  border-radius: 20px;
+  background: radial-gradient(
+    100% 100% at 100% 100%,
+    rgba(0, 173, 181, 1) 0%,
+    rgba(0, 173, 181, 1) 100%
+  );
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+.datesadded {
+  display: flex;
+  background-color: #ffffff;
+  color: rgba(34, 40, 49, 1);
+  border-radius: 50px;
+  overflow-x: scroll;
+
+  gap: 20px;
+}
+.datesadded::-webkit-scrollbar {
+  display: none;
+}
+.datemain {
+  background-color: rgba(0, 173, 181, 0.5);
+  padding: 5px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+.datemain h5 {
+  font-size: 20px;
+}
+.datebody {
+  background-color: #b9e0e1;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
 }

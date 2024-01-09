@@ -26,7 +26,7 @@ export default function homepage() {
           <p>A Portal To Assist You In Your Attendance Calculations</p>
         </div>
         <div className="homeform">
-          <form>
+          <form className="loginform">
             <h4>Login with your Academia Details</h4>
             <div className="forminner">
               <p>Glad you’re back.!</p>
