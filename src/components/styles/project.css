@@ -30,6 +30,14 @@ html {
 }
 .react-datepicker__input-container input {
   width: 50vw;
+  background: none;
+  border: 1px solid var(--Glass1-Stroke-Carey, #afafaf);
+  padding: 20px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.react-datepicker__input-container input::placeholder {
+  color: #ffffff;
 }
 .react-datepicker__month-container {
   padding: 40px;
