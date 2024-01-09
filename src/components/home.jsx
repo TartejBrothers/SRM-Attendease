@@ -6,6 +6,7 @@ import homeright from "./images/homeright.png";
 import vector1 from "./images/vectors/vector1.png";
 import vector2 from "./images/vectors/vector2.png";
 import vector3 from "./images/vectors/vector3.png";
+import { Link } from "react-router-dom";
 export default function homepage() {
   const changeType = () => {
     var passwordfield = document.getElementById("password");
@@ -55,9 +56,11 @@ export default function homepage() {
                 <input type="checkbox" name="remember" />
                 <p>Remember Me</p>
               </div>
-              <button type="submit" className="loginbutton">
-                Login
-              </button>
+              <Link to="/project">
+                <button type="submit" className="loginbutton">
+                  Login
+                </button>
+              </Link>
             </div>
           </form>
         </div>
