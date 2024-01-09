@@ -118,6 +118,9 @@ html {
   margin: 40px auto 40px auto;
 }
 @media screen and (max-width: 1000px) {
+  .projectcontent h1 {
+    text-align: center;
+  }
   .react-datepicker__month-container {
     padding: 0px;
     width: calc(90vw + 25px);
