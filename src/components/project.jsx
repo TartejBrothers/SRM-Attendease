@@ -49,6 +49,9 @@ export default function ProjectPage() {
         <div className="datebody">18th November</div>
         <div className="datebody">22nd - 30th November </div>
       </div>
+      <button type="submit" className="submitbutton calculatebutton">
+        Calculate
+      </button>
     </div>
   );
 }
