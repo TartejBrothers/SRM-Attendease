@@ -1,7 +1,9 @@
-html {
+.projectcontent {
   background-image: url("../images/projectpage/Background.png");
   padding: 20px;
+  min-height: 100vh;
 }
+
 .projectbody {
   display: flex;
   flex-direction: column;
