@@ -3,6 +3,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./styles/global.css";
 import "./styles/project.css";
+import { Link } from "react-router-dom";
 export default function ProjectPage() {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(null);
@@ -49,9 +50,11 @@ export default function ProjectPage() {
         <div className="datebody">18th November</div>
         <div className="datebody">22nd - 30th November </div>
       </div>
-      <button type="submit" className="submitbutton calculatebutton">
-        Calculate
-      </button>
+      <Link to="/od">
+        <button type="submit" className="submitbutton calculatebutton">
+          Calculate
+        </button>
+      </Link>
     </div>
   );
 }
