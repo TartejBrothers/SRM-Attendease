@@ -16,10 +16,13 @@ export default function OdPage() {
           <h5>OD’s Taken</h5>
         </div>
         <div className="odcontentbody">
-          <p>15th September</p>
+          <p>15th November</p>
         </div>
         <div className="odcontentbody">
-          <p>18th September</p>
+          <p>18th November</p>
+        </div>
+        <div className="odcontentbody">
+          <p>22nd - 30th November</p>
         </div>
       </div>
       <div className="odmainbottom">
