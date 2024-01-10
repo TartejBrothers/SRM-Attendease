@@ -1,0 +1,102 @@
+.odcontent {
+  background-image: url("../images/projectpage/Background.png");
+  padding: 20px;
+  min-height: 100vh;
+}
+.odbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.odbody p {
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.odmaintop,
+.odmainbottom {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  color: #106c72;
+  gap: 20px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.odmaintop {
+  overflow-x: scroll;
+}
+.odmaintop::-webkit-scrollbar {
+  display: none;
+}
+.odmainbottom {
+  flex-direction: column;
+}
+.odheader,
+.odcontentbody,
+.odcontentbodybottom {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.odheader {
+  justify-content: center;
+}
+.odheader h5 {
+  font-size: 16px;
+  text-align: center;
+}
+.odmainbottom h5 {
+  font-size: 24px;
+  text-align: center;
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+}
+.odheader,
+.odcontentbody {
+  border-radius: 40px;
+  background-color: #76cdd1;
+}
+.odcontentbodybottom {
+  background-color: #ffffff;
+  justify-content: space-between;
+  gap: 30px;
+}
+.bottomcontent {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  background-color: #76cdd1;
+  padding: 20px;
+  border-radius: 40px;
+}
+.bottomcontent p {
+  font-size: 18px;
+  text-align: center;
+}
+.bottomcontent:nth-child(2) {
+  background-color: #106c72;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+  .odcontent h1 {
+    text-align: center;
+  }
+  .odbody p {
+    font-size: 20px;
+  }
+  
+  .odcontentbodybottom {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .bottomcontent {
+    width: 90%;
+  }
+}
