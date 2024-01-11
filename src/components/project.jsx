@@ -43,9 +43,6 @@ export default function ProjectPage() {
         </form>
       </div>
       <div className="datesadded">
-        <div className="datemain">
-          <h5>Dates Added</h5>
-        </div>
         <div className="datebody">15th November</div>
         <div className="datebody">18th November</div>
         <div className="datebody">22nd - 30th November </div>

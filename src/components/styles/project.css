@@ -84,15 +84,14 @@
   border: none;
   color: #ffffff;
   font-size: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .datesadded {
   display: flex;
-  background-color: #ffffff;
+  justify-content: center;
   color: rgba(34, 40, 49, 1);
   border-radius: 50px;
-  overflow-x: scroll;
-
+  flex-wrap: wrap;
   gap: 20px;
 }
 .datesadded::-webkit-scrollbar {
@@ -109,11 +108,12 @@
   font-size: 20px;
 }
 .datebody {
-  background-color: #b9e0e1;
-  padding: 5px 20px;
-  font-size: 18px;
+  background-color: rgba(38, 111, 114, 0.65);
+  padding: 10px 20px;
+  font-size: 28px;
   border-radius: 50px;
   display: flex;
+  color: #ffffff;
   align-items: center;
 }
 .calculatebutton {
@@ -132,7 +132,7 @@
     width: 90vw;
   }
   .datesadded {
-    width: 90vw;
+    width: 100%;
     flex-direction: column;
   }
   .datemain {
@@ -142,7 +142,8 @@
   }
   .datebody {
     justify-content: center;
-    border-radius: 0px;
+    border-radius: 40px;
     padding: 10px 20px 10px 20px;
+    font-size: 18px;
   }
 }
