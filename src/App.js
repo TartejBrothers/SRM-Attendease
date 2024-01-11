@@ -1,6 +1,7 @@
 import HomePage from "./components/home";
 import ProjectPage from "./components/project";
 import OdPage from "./components/od";
+import AttendancePage from "./components/attendance";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/project" element={<ProjectPage />} />
+          <Route path="/attendance" element={<AttendancePage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/od" element={<OdPage />} />
         </Routes>
