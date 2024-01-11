@@ -56,7 +56,7 @@ export default function homepage() {
                 <input type="checkbox" name="remember" />
                 <p>Remember Me</p>
               </div>
-              <Link to="/project">
+              <Link to="/attendance">
                 <button type="submit" className="loginbutton">
                   Login
                 </button>

@@ -49,3 +49,14 @@
   text-align: center;
   gap: 20px;
 }
+@media screen and (max-width: 1000px) {
+  .attendanceheader {
+    font-size: 14px;
+    gap: 10px;
+  }
+  .attendancecolumns {
+    font-size: 12px;
+    max-width: 24%;
+    gap: 10px;
+  }
+}

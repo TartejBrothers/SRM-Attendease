@@ -18,7 +18,7 @@ export default function AttendancePage() {
             <div className="attendancecolumns">Required</div>
           </div>
           <div className="attendancerows">
-            <div className="attendancecolumns">Mathematics</div>
+            <div className="attendancecolumns">Mathematics </div>
             <div className="attendancecolumns">78%</div>
             <div className="attendancecolumns">2</div>
             <div className="attendancecolumns">0</div>
