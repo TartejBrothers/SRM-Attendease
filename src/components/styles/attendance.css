@@ -1,0 +1,51 @@
+.attendancecontent {
+  background-image: url("../images/projectpage/Background.png");
+  padding: 20px;
+  min-height: 100vh;
+}
+.attendancebody {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+.attendancebody p {
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+.attendancerecords {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+.attendanceheader,
+.attendancerows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.attendanceheader {
+  font-size: 30px;
+  background-color: rgba(38, 111, 114, 0.8);
+  padding: 10px;
+  border-radius: 40px;
+}
+.attendancerows {
+  background-color: rgba(38, 111, 114, 0.7);
+  padding: 10px;
+  border-radius: 40px;
+}
+.attendancecolumns {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}

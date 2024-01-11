@@ -37,7 +37,7 @@ export default function AttendancePage() {
           </div>
         </div>
       </div>
-      <Link to="/projects">
+      <Link to="/project">
         <button className="submitbutton calculatebutton">
           Check Your Atttendance With OD/ML
         </button>
